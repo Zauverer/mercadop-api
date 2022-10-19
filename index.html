@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,23 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    <div class="page-nav"></div>
-    <div class="page-content"></div>
+    <div class="page-nav">
+        <h1>Medicos</h1>
+        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+    </div>
+    <div class="page-content">
+        <div class="product-container">
+            <h3>Nombre</h3>
+            <img src="images/3304567.png">
+            <h2>$50.000</h2>
+            <button class="button-add" onclick="add('med1',50000)">Agregar</button>
+        </div>
+        <div class="product-container">
+            <h3>Nombre</h3>
+            <img src="images/3774293.png">
+            <h2>$30.000</h2>
+            <button class="button-add" onclick="add('med2',30000)">Agregar</button>
+        </div>
+    </div>
 </body>
 </html>
